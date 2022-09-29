@@ -1,0 +1,25 @@
+footer{
+  min-width: 1300px;
+  height: 280px;
+  background-color: #141414;
+}
+footer > .wrap{
+  width: 1300px;
+  color: #bcbcbc;
+  line-height: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 110px;
+}
+footer > .author > li:first-child{
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+footer .menu{
+  display: flex;
+}
+footer .menu ul{
+  margin-left: 70px;
+}

@@ -1,0 +1,82 @@
+#contact{
+  width: 100%;
+  padding: 80px 0px;
+  background-color: #f5f5f5;
+}
+#contact > .wrap{
+  padding:0px 100px;
+  display:flex;
+  justify-content: space-between;
+}
+.info{
+  width:360px;
+}
+.info > h1{
+  font-size: 20px;
+  color: #333;
+  line-height: 80px;
+}
+.info > p{
+  font-size: 15px;
+  color: #787878;
+  line-height: 30px;
+}
+.info > .txt{
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.info > p > b{
+  font-weight: bold;
+  color: #171717;
+}
+#contact form{
+  width: 635px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;/*위로붙게하기*/
+}
+input[type=text]{
+  width: 310px;
+  height: 40px;
+  background-color: #fff;
+  border: 0; outline: 0;
+  margin-bottom: 20px;
+  text-indent: 20px;
+  font-size: 15px;
+  resize: none;/*사용자가 크기변경 못하도록 설정*/
+}
+input:first-child{
+  margin-right: 15px;
+}
+input:nth-child(3){
+  width: 635px;
+}
+textarea{
+  width: 635px;
+  height: 160px;
+  padding: 20px;
+  border: 0; outline: 0;
+  font-size: 15px;
+  resize: none;
+}
+input[type=submit]{
+  width: 170px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #10c9c3;
+  border: 0; outline: 0;
+  color: #fff;
+  margin-top: 40px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: #0c8f8a;
+}
+.map{
+  width: 1300px;
+  margin: auto;
+  padding: 80px 100px 0px;
+  box-sizing: border-box;
+}
