@@ -1,0 +1,47 @@
+/*메인베너*/
+#main{
+  min-width: 1300px;
+  height: 320px;
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  box-sizing: border-box;
+  color: #191919;
+text-align: center;
+}
+
+#main > h1{
+  font-size: 36px;
+  line-height: 80px;
+}
+#main > p{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/*contents*/
+#contents > .wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+#contents .box{
+  width: 325px;
+  height: 280px;
+  position: relative;
+}
+.box > .eye{
+  position: absolute;
+  top: 0; left: 0;bottom: 0;right: 0;/*부모의100%크기*/
+  background-color: rgba(16, 201,195,0.6);
+  /*눈아이콘 적용*/
+  background-image: url(../img/eye.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*요소를 투명하게 설정*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;/*변환효과*/
+}
+.box:hover .eye{
+  opacity: 1;
+  visibility: visible;
+}
