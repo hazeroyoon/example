@@ -1,0 +1,118 @@
+.navi > li{
+  color: #fff;
+}
+
+.navi > li > a::after{
+  background-color: #fbcd43;
+}
+
+.sub > li:hover{
+  color: #fbcd43;
+}
+
+
+
+
+
+/*------------------section--------------------------------------*/
+
+
+
+#intro{
+  min-width: 1200px;
+  margin: auto;
+  background-color:#0a3f9c;
+  padding: 200px 0 300px;
+  line-height: 1.6;
+}
+#intro .wrap{
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+#intro h1{
+  font-family: 'ONE Mobile Title';
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 80px;
+} 
+#intro p{
+  font-family: 'ONE Mobile Regular';
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+}
+#intro img{
+  margin: 40px 0;
+}
+#intro .brandnew{
+  margin-bottom: 140px;
+}
+#intro .brandlogo{
+  margin-bottom: 140px;
+}
+
+#intro .content h1{
+  margin-bottom: 80px;
+}
+#intro .content h3{
+  font-family: 'ONE Mobile Title';
+  font-size:36px ;
+}
+#intro .content h4{
+  font-family: 'ONE Mobile Regular';
+  font-size:24px ;
+  padding: 10px 0;
+  color:#042866 ;
+}
+#intro .content p{
+  color: #333;
+  line-height: 1.8;
+}
+#intro .content .box{
+  text-align:left ;
+  padding:50px;
+  box-sizing: border-box;
+}
+
+#intro .content ul{
+  width: 1180px;
+  height: 1480px;
+}
+#intro .content ul li{
+  float: left;
+}
+#intro .b1{
+  width: 1180px;
+  height: 340px;
+  background: url(../img/intruduce-content01.png) center/cover;
+}
+#intro .b2{
+  width: 380px;
+  height: 720px;
+  background: url(../img/intruduce-content02.png) center/cover;
+  margin-top: 40px;
+}
+#intro .b3{
+  width: 760px;
+  height: 340px;
+  background: url(../img/intruduce-content03.png) center/cover;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+#intro .b4{
+  width: 760px;
+  height: 340px;
+  background: url(../img/intruduce-content04.png) center/cover;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+#intro .b5{
+  width: 1180px;
+  height: 340px;
+  background: url(../img/intruduce-content05.png) center/cover;
+  margin-top: 40px;
+}

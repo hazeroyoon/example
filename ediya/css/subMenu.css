@@ -1,0 +1,362 @@
+/********************망고베너**********************/
+#mango{
+  width: 100%;
+  height: 800px;
+  min-width: 1200px;
+  position: relative;
+}
+#mango .bg{
+  width: 1700px;
+  position: absolute;
+  bottom: 0px;
+}
+
+#mango .wrap{
+  position: relative;
+  margin: auto;
+  width: 1200px;
+  height: 600px;
+  top: 180px;
+}
+#mango .lgImg{
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 20px;
+}
+#mango h1{
+  text-align: left;
+  font-family: 'Jalnan';
+  position: absolute;
+  right: 0; top: 0;
+  color: #0a3f9c;
+  font-size: 60px;
+  line-height: 1.4;
+  padding: 20px 40px;
+  letter-spacing: -1px;
+}
+#mango h1 > b{
+  color: #fff;
+  -webkit-text-stroke: 3px #0a3f9c;
+  font-size: 48px;
+  letter-spacing: 1px;
+  position: relative;
+  top: -20px;
+}
+
+.mangoMenu img{
+  width: 108px;
+  filter:drop-shadow(8px 4px 0px #042866);
+}
+.mangoMenu{
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  display: flex;
+  padding: 20px 80px;
+}
+.mangoMenu li{
+  margin-left: 70px;
+  text-align: center;
+}
+.mangoMenu li p{
+  padding-top: 10px;
+  color:#fff;
+  font-family: 'ONE Mobile Regular';
+  font-size: 14px;
+  line-height:1.6;
+  letter-spacing: 1px;
+}
+.mangoMenu li p b{
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+
+/*************************#menuTab section***************************************/
+
+
+#menuTab{
+  width: 100%;
+  min-width: 1200px;
+  font-family:'ONE Mobile Regular';
+  color: #042866;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #fff;
+}
+
+/*메뉴 버튼*/
+.tab{
+  width: 1200px;
+  margin: 120px auto 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.tab button{
+  font-family: 'Jalnan';
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  -webkit-text-stroke: 3px #0a3f9c;
+  font-size: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tab button:hover{
+  color: #0a3f9c;
+  -webkit-text-stroke:0px;
+}
+.tab button.active{
+  color: #0a3f9c;
+  -webkit-text-stroke:0px;
+}
+/*tab-content*/
+#menuTab .wrap{
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.tab-content{
+  display: none;
+}
+/*********************season메뉴 영역: tab-content-1***********/
+.season{ display: block;}/**시즌메뉴 처음에 들어왔을때 보이게 하기**/
+.season .bg{
+  margin: auto;
+  width: 1200px;
+  height: 700px;
+  position: relative;
+}
+.season .bg>img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*season메뉴 첫번째 줄 메뉴정렬*/
+.season .upperM{
+  position: absolute;
+  top: 52px; left: 92px;
+
+}
+.season .upperM li{
+  float: left;
+  margin-right:108px;
+  position: relative;
+  cursor: pointer;
+}
+.season .upperM .sea.s4{
+  margin-right:0;
+}
+
+/*season메뉴 두번째 줄 메뉴정렬*/
+.season .underM{
+  position: absolute;
+  bottom: 120px; left: 241px;
+}
+.season .underM li{
+  float: left;
+  margin-right:108px;
+  position: relative;
+  cursor: pointer;
+}
+/*z-index & transition*/
+.sea >img{
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+}
+/*.on & p (컵받침, 텍스트)*/
+.season .on{
+  position: absolute;
+  bottom:34px;
+  left:2px;
+  opacity: 0;
+}
+.season p{
+  position: relative;
+  left:-28px;
+  top:20px
+}
+.season b{
+  font-size: 16px;
+}
+/*hover*/
+.tab-content .sea:hover .on{
+  opacity: 1;
+}
+.tab-content .sea:hover >img{
+  transform: scale(1.05);
+}
+
+/**************coffee메뉴 영역: tab-content-2*****************/
+
+.coffee .bg{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+.coffee .bg > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*커피메뉴 첫번째줄 정렬*/
+.coffee .upperM{
+  position: absolute;
+  top: 38px; left: 175px;
+}
+.coffee .upperM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.coffee .cof.c3{margin-right: 0;}
+
+/*커피메뉴 두번째줄 정렬*/
+.coffee .underM{
+  position: absolute;
+  bottom:60px; left: 175px;
+}
+.coffee .underM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.coffee .cof.c6{margin-right: 0;}
+
+/*z-index & transition*/
+.cof >img{
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+}
+/*.on & p (컵받침, 텍스트)*/
+.coffee .on{
+  position: absolute;
+  bottom:34px;
+  left:-3px;
+  opacity: 0;
+}
+.coffee .on img{
+  width: 203px; height:114px;
+}
+.coffee p{
+  text-align: left;
+  position: relative;
+  bottom: 24px; left: -4px;
+}
+.coffee b{
+  font-size: 16px;
+}
+
+/*hover*/
+.tab-content .cof:hover .on{
+  opacity: 1;
+}
+.tab-content .cof:hover >img{
+  transform: scale(1.05);
+}
+
+/**************non-caffeine메뉴 영역: tab-content-2*****************/
+
+.noncafein .bg{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+.noncafein .bg > img{
+  width: 100%;
+  height: 100%;
+}
+
+.noncafein .non > img{display: inline-block;}
+/*논카페인메뉴 첫번째줄 정렬*/
+.noncafein .upperM{
+  position: absolute;
+  top: 38px; left: 12px;
+}
+.noncafein .upperM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.noncafein .non.n4{margin-right: 0;}
+
+/*커피메뉴 두번째줄 정렬*/
+.noncafein .underM{
+  position: absolute;
+  bottom:60px; left: 175px;
+}
+.noncafein .underM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.noncafein .non.n7{margin-right: 0;}
+
+/*z-index & transition*/
+.non >img{
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+}
+/*.on & p (컵받침, 텍스트)*/
+.noncafein .on{
+  position: absolute;
+  bottom:34px;
+  left:-3px;
+  opacity: 0;
+}
+.noncafein .on img{
+  width: 203px; height:114px;
+}
+.noncafein p{
+  text-align: left;
+  position: relative;
+  bottom: 24px; left: -3px;
+}
+.noncafein b{
+  font-size: 16px;
+}
+
+/*hover*/
+.tab-content .non:hover .on{
+  opacity: 1;
+}
+.tab-content .non:hover >img{
+  transform: scale(1.05);
+}
+
+/*버튼*/
+.tab-content button{
+  margin:0px auto 40px;
+  padding: 16px 60px;
+  background-color:transparent;
+  color:#042866;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'ONE Mobile Regular';
+  cursor: pointer;
+  border: 1px solid #042866;
+}
+.tab-content button:hover{
+  color: #fff;
+  border: 1px solid #0a3f9c;
+  background-color: #0a3f9c;
+}
