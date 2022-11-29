@@ -1,0 +1,1118 @@
+.toggleBtn{
+  position: absolute;
+  right: 32px; top:30px;
+  font-size:40px;
+  cursor: pointer;
+  display: none;
+}
+/********************망고베너**********************/
+#mango{
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  position: relative;
+}
+#mango .bg{
+  width: 1700px;
+  position: absolute;
+  bottom: 0px;
+}
+
+#mango .wrap{
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  height: 600px;
+  top: 180px;
+}
+#mango .lgImg{
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 20px;
+}
+#mango h1{
+  text-align: left;
+  font-family: 'Jalnan';
+  position: absolute;
+  right: 0; top: 0;
+  color: #0a3f9c;
+  font-size: 60px;
+  line-height: 1.4;
+  padding: 20px 40px;
+  letter-spacing: -1px;
+}
+#mango h1 > b{
+  color: #fff;
+  -webkit-text-stroke: 3px #0a3f9c;
+  font-size: 48px;
+  letter-spacing: 1px;
+  position: relative;
+  top: -20px;
+}
+
+.mangoMenu img{
+  width: 108px;
+  filter:drop-shadow(8px 4px 0px #042866);
+}
+.mangoMenu{
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  display: flex;
+  padding: 20px 80px;
+}
+.mangoMenu li{
+  margin-left: 70px;
+  text-align: center;
+}
+.mangoMenu li p{
+  padding-top: 10px;
+  color:#fff;
+  font-family: 'ONE Mobile Regular';
+  font-size: 14px;
+  line-height:1.6;
+  letter-spacing: 1px;
+}
+.mangoMenu li p b{
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+
+/*************************#menuTab section***************************************/
+
+
+#menuTab{
+  max-width: 1200px;
+  margin: auto;
+  font-family:'ONE Mobile Regular';
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #fff;
+}
+
+/*메뉴 버튼*/
+.tab{
+  max-width: 1200px;
+  margin: 120px auto 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab > li>a{
+  font-family: 'Jalnan';
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 3px #0a3f9c;
+  font-size: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tab > li> a:hover{
+  color: #0a3f9c;
+  -webkit-text-stroke:0px;
+}
+.tab > li.active>a{
+  color: #0a3f9c;
+  -webkit-text-stroke:0px;
+}
+/*tab-content*/
+#menuTab .wrap{
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/*********************season메뉴 영역: tab-content-1***********/
+/**#season{ display: block;}시즌메뉴 처음에 들어왔을때 보이게 하기**/
+#season .bg{
+  margin: auto;
+  width: 1200px;
+  height: 700px;
+  position: relative;
+  outline: 1px solid yellow;
+}
+#season .bg .baverage{
+ width: 190px;
+ height: 213px;
+}
+
+
+/*season메뉴 첫번째 줄 메뉴정렬*/
+#season .upperM{
+  position: absolute;
+  top: 48px; left: 100px;
+  outline: 1px solid rebeccapurple;
+}
+#season .upperM li{
+  float: left;
+  margin-right:103px;
+  position: relative;
+  cursor: pointer;
+  outline: 1px solid green;
+}
+#season .upperM .sea:nth-child(4){
+  margin-right:0;
+}
+
+/*season메뉴 두번째 줄 메뉴정렬*/
+#season .underM{
+  position: absolute;
+  bottom: 124px; left: 247px;
+  outline: 1px solid rebeccapurple;
+}
+#season .underM li{
+  float: left;
+  margin-right:103px;
+  position: relative;
+  cursor: pointer;
+}
+/*z-index & transition*/
+.sea > .baverage{
+  width:190px ; height: 213px;
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+}
+
+/*.on & p (컵받침, 텍스트)*/
+#season .on{
+  width: 123px;
+  height: 61px;
+  position: absolute;
+  bottom:34px;
+  left:2px;
+  opacity: 0;
+}
+#season p{
+  position: relative;
+  left:-28px;
+  top:20px
+}
+#season b{
+  font-size: 16px;
+}
+/*hover*/
+#season .sea:hover .on{
+  opacity: 1;
+}
+#season .sea:hover > .baverage{
+  transform: scale(1.05);
+  filter:
+}
+
+/**************coffee메뉴 영역: tab-content-2*****************/
+
+#coffee .bg{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+#coffee .bg > img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*커피메뉴 첫번째줄 정렬*/
+#coffee .upperM{
+  position: absolute;
+  top: 37px; left: 174px;
+}
+#coffee .upperM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#coffee .cof.c3{margin-right: 0;}
+
+/*커피메뉴 두번째줄 정렬*/
+#coffee .underM{
+  position: absolute;
+  bottom:60px; left: 174px;
+}
+#coffee .underM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#coffee .cof:nth-child(3){margin-right: 0;}
+
+/*z-index & transition*/
+.cof >.baverage{
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+  width: 274px;
+  height: 248px;
+}
+/*.on & p (컵받침, 텍스트)*/
+#coffee .on{
+  width: 206px; height:114px;
+  position: absolute;
+  bottom:40px;
+  left:-3px;
+  opacity: 0;
+}
+
+#coffee p{
+  text-align: left;
+  position: relative;
+  bottom: 24px; left: -4px;
+}
+#coffee b{
+  font-size: 16px;
+}
+
+/*hover*/
+#coffee .cof:hover >.on{
+  opacity: 1;
+}
+#coffee .cof:hover > .baverage{
+  transform: scale(1.05);
+}
+
+/**************non-caffeine메뉴 영역: tab-content-2*****************/
+
+#noncafein .bg{
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+#noncafein .bg > img{
+  width: 100%;
+  height: 100%;
+}
+
+#noncafein .non > img{display: inline-block;}
+/*논카페인메뉴 첫번째줄 정렬*/
+#noncafein .upperM{
+  position: absolute;
+  top: 38px; left: 12px;
+}
+#noncafein .upperM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#noncafein .non:nth-child(4){margin-right: 0;}
+
+/*커피메뉴 두번째줄 정렬*/
+#noncafein .underM{
+  position: absolute;
+  bottom:60px; left: 175px;
+}
+#noncafein .underM li{
+  float: left;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+#noncafein .non:nth-child(4){margin-right: 0;}
+
+/*z-index & transition*/
+.non >.baverage{
+  width: 274px;
+  height: 248px;
+  position: relative;
+  z-index: 3;
+  transition: all 0.5s;
+}
+/*.on & p (컵받침, 텍스트)*/
+#noncafein .on{
+  width: 203px; height:114px;
+  position: absolute;
+  bottom:40px;
+  left:-3px;
+  opacity: 0;
+}
+#noncafein p{
+  text-align: left;
+  position: relative;
+  bottom: 24px; left: -3px;
+}
+#noncafein b{
+  font-size: 16px;
+}
+
+/*hover*/
+#noncafein .non:hover >.on{
+  opacity: 1;
+}
+#noncafein .non:hover >.baverage{
+  transform: scale(1.05);
+}
+
+/*버튼*/
+.tab-content .more{
+  margin:0px auto 40px;
+  padding: 16px 60px;
+  background-color:transparent;
+  color:#042866;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'ONE Mobile Regular';
+  cursor: pointer;
+  border: 1px solid #042866;
+}
+.tab-content .more:hover{
+  color: #fff;
+  border: 1px solid #0a3f9c;
+  background-color: #0a3f9c;
+}
+/*******footer*******/
+footer{
+  background-color:#fefce1;
+}
+footer .wrap{
+  width: 1200px;
+  margin: auto;
+  padding-top: 80px; box-sizing: border-box;
+  font-size:14px;
+  color: #262626;
+  font-family: 'ONE Mobile Regular';
+}
+footer .up{
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.2;
+  letter-spacing: 1px;
+  padding-bottom: 60px;
+}
+footer .up img{
+  opacity: 0.6;
+}
+footer .up >div{
+  display: flex;
+}
+footer .up >div>ul{
+  margin-left: 80px;
+}
+footer .up ul>li:first-child{
+  font-family: 'Jalnan';
+  padding-bottom: 10px;
+  color: #666;
+}
+footer .down{
+  width: 100%;
+  height:250px;
+  border-top: 2px solid rgba(102, 102, 102, 0.384);
+  padding-top: 40px;
+  position: relative;
+}
+footer .contain{
+  position: absolute;
+  right:0
+}
+footer .adress{
+  line-height: 1.6;
+}
+footer .adress li:last-child{
+  line-height: 3;
+  font-weight: bold;
+}
+footer .app{
+  display: flex;
+  margin-top: 40px;
+}
+footer .app li{
+  margin-right: 20px;
+}
+footer .app button{
+  background-color: transparent;
+  width: 170px; height: 45px;
+  border: 2px solid rgba(102, 102, 102, 0.384);
+  border-radius: 35px;
+  line-height: 45px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+footer .app button i{
+  font-size: 23px;
+  position: relative;
+  top: 4px;
+  margin-right: 12px;
+}
+footer .app li:first-child i{
+  font-size: 28px;
+}
+
+@media (max-width:980px){
+  .toggleBtn{
+    display: none;
+  }
+  header >.wrap{
+    max-width:980px;
+    padding: 20px 40px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    outline: 1px solid red;
+  }
+  #mango{
+    outline: 1px solid red;
+    max-width: 980px;
+  }
+  #mango .bg{
+    right:-80px;
+    bottom: 30px;
+  }
+  #mango .wrap{
+    max-width: 980px;
+    outline: 1px solid pink;
+  }
+  #mango .lgImg{
+    width: 450px;
+    left: 0px;
+    bottom: 100px;
+  }
+  #mango h1{
+    font-size: 42px;
+    top: 100px;
+    right:60px;
+  }
+  #mango h1 >b{
+    -webkit-text-stroke: 2px #0a3f9c;
+    font-size: 34px;
+    letter-spacing: 0px;
+  }
+  #mango .mangoMenu img{
+    width: 98px;
+  }
+  #mango .mangoMenu{
+    padding: 20px 100px;
+  }
+  #mango .mangoMenu li{
+    margin-left: 40px;
+  }
+
+  #menuTab{
+    max-width: 980px;
+    outline: 1px solid black;
+  }
+  #menuTab .tab{
+    width: 800px;
+    outline: 1px solid red;
+    justify-content:left;
+    margin-top:30px ;
+    margin-bottom: 25px;
+    margin-left: 70px;
+    align-items: baseline;
+  }
+  #menuTab .tab > li{
+    padding-right: 60px;
+  }
+  #menuTab .tab >li>a{
+    font-size: 24px;
+    -webkit-text-stroke: 1px #0a3f9c;
+  }
+  #menuTab .tab > li.active>a{
+    font-size: 50px;
+  }
+  #menuTab .wrap{
+    max-width: 980px;
+  }
+  /*season*/
+  #season .bg{
+    width: 980px;
+    height: 600px;
+  }
+  #season .bg>img{
+    width: 980px;
+  }
+  #season .bg .baverage{
+    width: 158px;
+    height: 170px;
+  }
+  #season .on{
+    width: 102px;
+    height: 48px;
+    bottom:39px;
+  }
+  #season .upperM{
+    top: 45px; left: 74px;
+  }
+  #season .upperM li{
+    margin-right: 85px;
+  }
+  #season .underM{
+    left: 196px; bottom: 114px;
+  }
+  #season .underM li{
+    margin-right: 85px;
+  }
+  /*coffee*/
+  #coffee .bg{
+    width: 980px;
+    height: 600px;
+  }
+  #coffee .bg>img{
+    width: 980px;
+  }
+  #coffee .bg .baverage{
+    width: 220px;
+    height: 199px;                       
+  }
+  #coffee .on{
+    width: 167px;
+    height: 94px;
+    bottom:43px;
+  }
+  #coffee .upperM{
+    top: 44px; left: 143px;
+  }
+  #coffee .upperM li{
+    margin-right: 28px;
+  }
+  #coffee .underM{
+    left: 143px; bottom: 45px;
+  }
+  #coffee .underM li{
+    margin-right: 28px;
+  }
+  /*noncafein*/
+  #noncafein .bg{
+    width: 980px;
+    height: 600px;
+  }
+  #noncafein .bg>img{
+    width: 940px;
+  }
+  #noncafein .bg .baverage{
+    width: 219px;
+    height: 197px;                       
+  }
+  #noncafein .on{
+    width: 160px;
+    height: 96px;
+    bottom:43px;
+    left:-1px;
+  }
+  #noncafein .upperM{
+    top: 46px; left: 28px;
+  }
+  #noncafein .upperM li{
+    margin-right: 19px;
+  }
+  #noncafein .underM{
+    left: 155px; bottom: 44px;
+  }
+  #noncafein .underM li{
+    margin-right: 19px;
+  }
+  /*버튼*/
+  .tab-content .more{
+    font-size: 14px;
+    position: relative;
+    top: -15px;
+    padding: 10px 40px;
+  }
+  /*푸터*/
+  footer .wrap{
+    max-width: 980px;
+    padding: 80px 40px 0;
+  }
+  
+}
+@media (max-width:768px){
+  header .wrap{
+    max-width:768px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px;
+    padding-right: 0px;
+  }
+  header .logo{
+    margin-left: 40px;
+  }
+  header .navi{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    display: none;
+  }
+  .navi > li {
+    margin: 0 200px;}
+  .navi li{padding: 10px 0 ;box-sizing: border-box;}
+
+  .navi ul{
+    opacity: 0;
+  }
+  .toggleBtn{display: block;}
+  .navi.active{display: flex;}
+  
+
+  #mango{
+    max-width: 768px;
+    height: 900px;
+    background-image: url(../img/768bg.png);
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+  }
+  #mango .bg{
+   display: none;
+  }
+  #mango .wrap{
+    max-width: 768px;
+    height: 100%;
+    top: 100px;
+
+   
+  }
+
+  #mango .lgImg{
+   display: none;
+  }
+  #mango h1{
+    display: none;
+  }
+  #mango b{
+    display: none;
+  }
+  .mangoMenu{
+    display: none;
+  }
+  #menuTab{
+    max-width: 768px;}
+
+   #menuTab .warp{
+    max-width: 768px;
+}
+.tab-content {
+  width: 768px;
+}
+#season .bg{
+  height: 880px;
+  background-image: url(../img/786bg\(1-2\).jpg);
+  background-position:left top;
+  background-repeat: no-repeat;
+}
+#season > .bg >img{
+  display: none;
+}
+#season .upperM{
+  width: 675px;
+  top: 82px;
+  left: 77px;
+}
+#season .upperM li{
+  margin-right: 79px;
+}
+#season .upperM li:nth-child(3){
+  margin-right: 0;
+}
+#season .upperM li:nth-child(4){
+  display: none;
+}
+#season .underM{
+  width: 675px;
+  left: 77px;
+  bottom: 294px;
+}
+#season .underM li{
+  margin-right: 79px;
+}
+
+#season .underM li:nth-child(3){
+  margin-right: 0;
+}
+#season .more{
+  top:-120px;
+  margin: auto;
+}
+  #season p{
+    left: -24px;
+  }
+
+  #coffee .bg{
+    height: 800px;
+    top: -40px;
+    left: -20px;
+    background-image: url(../img/786bg\(2-1\).jpg);
+    background-position:left top;
+    background-repeat: no-repeat;
+  }
+  #coffee > .bg >img{
+    display: none;
+  }
+  #coffee .upperM{
+    width: 675px;
+    top: 100px;
+    left: 84px;
+  }
+  #coffee .upperM li{
+    margin-right: 5px;
+  }
+  
+  #coffee .upperM li:nth-child(3){
+    margin-right: 0;
+  }
+
+  #coffee .underM{
+    width: 675px;
+    left: 84px;
+    bottom: 126px;
+  }
+  #coffee .underM li{
+    margin-right: 5px;
+  }
+  
+  #coffee .underM li:nth-child(3){
+    margin-right: 0;
+  }
+ 
+    #coffee p{
+     text-align: center;
+     left: -40px;
+     top: 10px;
+    }
+   #coffee .more{
+    top:-50px;
+    margin: 0 auto 80px; 
+  }
+  
+  #noncafein .bg{
+    height: 800px;
+   
+    left: -20px;
+    background-image: url(../img/786bg\(2-1\).jpg);
+    background-position:left top;
+    background-repeat: no-repeat;
+  }
+  #noncafein > .bg >img{
+    display: none;
+  }
+  #noncafein .upperM{
+    width: 675px;
+    top: 101px;
+    left: 85px;
+  }
+  #noncafein .upperM li{
+    margin-right: 7px;
+  }
+  #noncafein .upperM li:nth-child(4){
+    display: none;
+  }
+  #noncafein .upperM li:nth-child(3){
+    margin-right: 0;
+  }
+
+  #noncafein .underM{
+    width: 675px;
+    left: 85px;
+    bottom: 126px;
+  }
+  #noncafein .underM li{
+    margin-right: 7px;
+  }
+  
+  #noncafein .underM li:nth-child(3){
+    margin-right: 0;
+  }
+ 
+    #noncafein p{
+     text-align: center;
+     left: -40px;
+     top: 10px;
+    }
+   #noncafein .more{
+    top:0px;
+    margin: 0 auto 80px; 
+  }
+  #noncafein > .tab >li.active> a{
+    font-size: 38px;
+    letter-spacing: -2px;
+  }
+
+
+
+  footer .wrap{
+    max-width: 768px;
+    padding: 80px 80px 0;
+    font-size:12px;
+  }
+  footer .up{
+    flex:none
+  }
+  footer .up> img{
+    display: none;
+  }
+  footer .up >div>ul{
+    margin-left: 0px;
+    margin-right: 70px;
+    justify-content: center;
+  }
+  footer .up >div>ul:nth-child(3){
+    margin-right: 0;
+  }
+  footer .contain{
+    left: 0;
+  }
+}
+@media (max-width:480px){
+  header .wrap{
+    max-width:480px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navi{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    display: none;
+  }
+  .navi > li {
+    margin: 0 100px;}
+  header .logo{
+    margin-left: 20px;
+  }
+  .toggleBtn{
+    right: 20px;
+  }
+  .navi li{padding: 10px 0 ;box-sizing: border-box;}
+
+  .navi ul{
+    opacity: 0;
+  }
+  .toggleBtn{display: block;}
+  .navi.active{display: flex;}
+  
+
+  #mango{
+    max-width: 480px;
+    height: 900px;
+    background-image: url(../img/480bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  #mango .bg{
+   display: none;
+  }
+  #mango .wrap{
+    max-width: 480px;
+    height: 100%;
+    top: 100px;
+
+   
+  }
+
+  #mango .lgImg{
+   display: none;
+  }
+  #mango h1{
+    display: none;
+  }
+  #mango b{
+    display: none;
+  }
+  .mangoMenu{
+    display: none;
+  }
+  #menuTab{
+    max-width: 480px;}
+
+   #menuTab .warp{
+    max-width: 480px;
+}
+.tab-content {
+  width: 480px;
+}
+#menuTab .tab{
+  margin-left: 20px;
+}
+#menuTab .tab >li>a{
+  font-size: 18px;
+}
+#menuTab .tab > li.active>a{
+  font-size: 38px;
+}  
+#menuTab .tab > li{
+  padding-right: 30px;
+}
+#season .bg{
+  height: 920px;
+  background-image: url(../img/480bg\(1-4\).jpg);
+  background-position:left top;
+  background-repeat: no-repeat;
+}
+#season > .bg >img{
+  display: none;
+}
+#season .upperM{
+  width: 464px;
+  top: 54px;
+  left: 52px;
+}
+#season .upperM li{
+  margin-right: 74px;
+  margin-bottom: 60px;
+}
+
+#season .upperM li:nth-child(3){
+  margin-right: 0;
+}
+#season .upperM li:nth-child(4){
+  display: none;
+}
+#season .underM{
+  width: 464px;
+  left: 52px;
+  bottom: 5px;
+}
+#season .underM li{
+  margin-right: 74px;
+  margin-bottom: 60px;
+}
+#season .underM li:nth-child(1){
+  margin-left: 230px;
+}
+#season .underM li:nth-child(3){
+  margin-right: 0;
+}
+#season .more{
+  top:0px;
+  margin:40px auto;
+}
+  #season p{
+    left: -24px;
+  }
+  #coffee .bg{
+    height: 1000px;
+    background-image: url(../img/480bg\(2-1\).jpg);
+    background-position:left top;
+    background-repeat: no-repeat;
+  }
+  #coffee > .bg >img{
+    display: none;
+  }
+  #coffee .upperM{
+    width: 480px;
+    top: 62px;
+    left: 30px;
+  }
+  #coffee .upperM li{
+    margin-right: 11px;
+    margin-bottom: 48px;
+  }
+  
+  #coffee .upperM li:nth-child(3){
+    margin-right: 0;
+  }
+  #coffee .upperM li:nth-child(4){
+    display: none;
+  }
+  #coffee .underM{
+    width: 480px;
+    left: 30px;
+    bottom: 86px;
+  }
+  #coffee .underM li{
+    margin-right: 11px;
+    margin-top: 44px;
+  }
+
+  #coffee .underM li:nth-child(1){
+    margin-left: 234px;
+  }
+  #coffee .more{
+    top:-50px;
+    margin:40px auto;
+  }
+    #coffee p{
+      left: -24px;
+    }
+  
+  #noncafein > .bg >img{
+    display: none;
+  }
+  #noncafein .bg{
+    height: 1100px;
+    background-image: url(../img/480bg\(3\).jpg);
+    background-position:left top;
+    background-repeat: no-repeat;
+  }
+    #noncafein .upperM{
+      width: 480px;
+      top: 65px;
+      left: 32px;
+    }
+    #noncafein .upperM li{
+      margin-right: 15px;
+      margin-bottom: 48px;
+    }
+    
+    #noncafein .upperM li:nth-child(3){
+      margin-right: 0;
+    }
+    #noncafein .upperM li:nth-child(4){
+      display: none;
+    }
+    #noncafein .underM{
+      width: 480px;
+      left: 32px;
+      bottom: 184px;
+    }
+    #noncafein .underM li{
+      margin-right: 15px;
+      margin-top: 47px;
+    }
+    #noncafein .underM li:nth-child(1){
+      margin-left: 234px;
+    }
+    #noncafein > .tab >li.active> a{
+      font-size: 30px;
+      letter-spacing: -1px;
+    }
+    #noncafein .more{
+      top:-100px;
+      margin:40px auto;
+    }
+      #noncafein p{
+        left: -24px;
+      }
+  
+      footer .wrap{
+        max-width: 480px;
+        outline: 1px solid blue;
+        font-size:12px;
+      }
+      footer .up{
+        flex:none
+      }
+      footer .up>div{
+        flex-direction: column;
+      }
+      footer .up> img{
+        display: none;
+      }
+      footer .up >div>ul{
+        margin-left: 0px;
+        margin-right: 70px;
+        justify-content: center;
+      }
+      footer .up >div>ul:nth-child(3){
+        margin-right: 0;
+      }
+      footer .up >div>ul>li.non:nth-child(1){
+        display: none;
+      }
+      footer .contain{
+        left: 0;
+      }
+      footer .app li:last-child{
+        display: none;
+      }
+}

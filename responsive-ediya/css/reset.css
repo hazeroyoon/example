@@ -1,0 +1,52 @@
+@font-face{
+  font-family:'Jalnan';
+  src:url(../font/Jalnan.ttf)format('truetype');
+}
+@font-face{
+  font-family: 'ONE Mobile';
+  src:url(../font/ONE\ Mobile\ Title.ttf)format('truetype');
+}
+@font-face{
+  font-family: 'ONE Mobile Regular';
+  src:url(../font/ONE\ Mobile\ Regular.ttf)format('truetype');
+}
+@font-face{
+  font-family: 'ONE Mobile Title';
+  src:url(../font/ONE\ Mobile\ Title.ttf)format('truetype');
+}
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+html{scroll-behavior:smooth ;}
+
+.clearfix::after{
+ content: "";
+ display: block;
+clear: both;
+}
+
+section > .wrap{
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+section .txt{
+  text-align: center;
+}
+section .txt h1{
+  font-family: 'Jalnan';
+  line-height: 1;
+  color: #0a3f9c;
+}
+section .txt h3{
+  font-family: 'Jalnan';
+  line-height: 1.4;
+  letter-spacing: 2px;
+  color: #fbcd43;
+}
+section .txt p{
+  font-family: "ONE Mobile";
+  color: #0a3f9c;
+  letter-spacing: 1px;
+}
