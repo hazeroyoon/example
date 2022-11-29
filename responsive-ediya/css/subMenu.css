@@ -134,7 +134,6 @@
   width: 1200px;
   height: 700px;
   position: relative;
-  outline: 1px solid yellow;
 }
 #season .bg .baverage{
  width: 190px;
@@ -146,14 +145,12 @@
 #season .upperM{
   position: absolute;
   top: 48px; left: 100px;
-  outline: 1px solid rebeccapurple;
 }
 #season .upperM li{
   float: left;
   margin-right:103px;
   position: relative;
   cursor: pointer;
-  outline: 1px solid green;
 }
 #season .upperM .sea:nth-child(4){
   margin-right:0;
@@ -163,7 +160,6 @@
 #season .underM{
   position: absolute;
   bottom: 124px; left: 247px;
-  outline: 1px solid rebeccapurple;
 }
 #season .underM li{
   float: left;
@@ -456,10 +452,8 @@ footer .app li:first-child i{
     padding: 20px 40px;
     padding-right: 80px;
     box-sizing: border-box;
-    outline: 1px solid red;
   }
   #mango{
-    outline: 1px solid red;
     max-width: 980px;
   }
   #mango .bg{
@@ -468,7 +462,6 @@ footer .app li:first-child i{
   }
   #mango .wrap{
     max-width: 980px;
-    outline: 1px solid pink;
   }
   #mango .lgImg{
     width: 450px;
@@ -497,11 +490,9 @@ footer .app li:first-child i{
 
   #menuTab{
     max-width: 980px;
-    outline: 1px solid black;
   }
   #menuTab .tab{
     width: 800px;
-    outline: 1px solid red;
     justify-content:left;
     margin-top:30px ;
     margin-bottom: 25px;
@@ -1086,7 +1077,6 @@ footer .app li:first-child i{
   
       footer .wrap{
         max-width: 480px;
-        outline: 1px solid blue;
         font-size:12px;
       }
       footer .up{
