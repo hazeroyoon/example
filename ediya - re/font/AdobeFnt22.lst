@@ -1,0 +1,189 @@
+%!Adobe-FontList 1.22
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\._Jalnan.ttf
+FileModTime:1665918791
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\._ONE Mobile Bold.ttf
+FileModTime:1665918791
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\._ONE Mobile Light.ttf
+FileModTime:1665918791
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\._ONE Mobile Regular.ttf
+FileModTime:1665918791
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\._ONE Mobile Title.ttf
+FileModTime:1665918791
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Jalnan
+FamilyName:Jalnan
+StyleName:Regular
+FullName:Jalnan
+MenuName:여기어때 잘난체
+StyleBits:0
+FamilyNameNative:여기어때 잘난체
+StyleNameNative:Regular
+FullNameNative:여기어때 잘난체
+WritingScript:Korean
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\Jalnan.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1410252
+FileModTime:1665653160
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Jalnan
+NameArray:3,Mac,4,여기어때 잘난체
+NameArray:3,Mac,18,여기어때 잘난체
+NameArray:0,Win,1,Jalnan
+NameArray:0,Win,16,Jalnan
+NameArray:3,Win,1,여기어때 잘난체
+NameArray:3,Win,16,여기어때 잘난체
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ONEMobileBold
+FamilyName:ONE Mobile
+StyleName:Bold
+FullName:ONE Mobile Bold
+MenuName:ONE 모바일고딕 Bold
+StyleBits:2
+FamilyNameNative:ONE 모바일고딕
+StyleNameNative:Bold
+FullNameNative:ONE 모바일고딕 Bold
+WritingScript:Korean
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\ONE Mobile Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:4089788
+FileModTime:1629264716
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,ONE Mobile Bold
+NameArray:3,Mac,4,ONE 모바일고딕 Bold
+NameArray:0,Win,1,ONE Mobile Bold
+NameArray:0,Win,16,ONE Mobile
+NameArray:3,Win,1,ONE 모바일고딕 Bold
+NameArray:3,Win,16,ONE 모바일고딕
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ONEMobileLight
+FamilyName:ONE Mobile
+StyleName:Light
+FullName:ONE Mobile Light
+MenuName:ONE 모바일고딕 Light
+StyleBits:0
+FamilyNameNative:ONE 모바일고딕
+StyleNameNative:Light
+FullNameNative:ONE 모바일고딕 Light
+WritingScript:Korean
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\ONE Mobile Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:4233772
+FileModTime:1631780620
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,ONE Mobile Light
+NameArray:3,Mac,4,ONE 모바일고딕 Light
+NameArray:0,Win,1,ONE Mobile Light
+NameArray:0,Win,16,ONE Mobile
+NameArray:3,Win,1,ONE 모바일고딕 Light
+NameArray:3,Win,16,ONE 모바일고딕
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ONEMobileRegular
+FamilyName:ONE Mobile
+StyleName:Regular
+FullName:ONE Mobile Regular
+MenuName:ONE 모바일고딕 Regular
+StyleBits:0
+FamilyNameNative:ONE 모바일고딕
+StyleNameNative:Regular
+FullNameNative:ONE 모바일고딕 Regular
+WritingScript:Korean
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\ONE Mobile Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:4186060
+FileModTime:1629859244
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,ONE Mobile Regular
+NameArray:3,Mac,4,ONE 모바일고딕 Regular
+NameArray:0,Win,1,ONE Mobile Regular
+NameArray:0,Win,16,ONE Mobile
+NameArray:3,Win,1,ONE 모바일고딕 Regular
+NameArray:3,Win,16,ONE 모바일고딕
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ONEMobileTitleRegular
+FamilyName:ONE Mobile Title
+StyleName:Regular
+FullName:ONE Mobile Title
+MenuName:ONE 모바일고딕 Title
+StyleBits:0
+FamilyNameNative:ONE 모바일고딕 Title
+StyleNameNative:Regular
+FullNameNative:ONE 모바일고딕 Title
+WritingScript:Korean
+OutlineFileName:D:\html윤하영\html윤하영\ediya\Font\ONE Mobile Title.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2023396
+FileModTime:1623376922
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,ONE Mobile Title
+NameArray:3,Mac,4,ONE 모바일고딕 Title
+NameArray:0,Win,1,ONE Mobile Title
+NameArray:0,Win,16,ONE Mobile Title
+NameArray:3,Win,1,ONE 모바일고딕 Title
+NameArray:3,Win,16,ONE 모바일고딕 Title
+%EndFont
+
