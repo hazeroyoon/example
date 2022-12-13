@@ -36,17 +36,18 @@ section .txt{
 }
 section .txt h1{
   font-family: 'Jalnan';
-  line-height: 1;
+  line-height: 1.4;
   color: #0a3f9c;
 }
 section .txt h3{
   font-family: 'Jalnan';
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 2px;
   color: #fbcd43;
 }
 section .txt p{
-  font-family: "ONE Mobile";
-  color: #0a3f9c;
+  font-family: 'ONE Mobile Regular';
+  color: #333;
   letter-spacing: 1px;
+  font-weight: bold;
 }

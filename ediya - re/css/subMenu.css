@@ -13,10 +13,12 @@
   margin: auto;
   position: relative;
 }
+
 #mango .bg{
   width: 1700px;
   position: absolute;
   bottom: 0px;
+  left: 0;
 }
 
 #mango .wrap{
@@ -30,26 +32,25 @@
   position: absolute;
   z-index: 1;
   bottom: 60px;
-  left: 20px;
+  left: 0px;
+ 
 }
 #mango h1{
   text-align: left;
   font-family: 'Jalnan';
   position: absolute;
-  right: 0; top: 0;
+  right: 70px; top: 0;
   color: #0a3f9c;
-  font-size: 60px;
+  font-size: 48px;
   line-height: 1.4;
   padding: 20px 40px;
   letter-spacing: -1px;
 }
 #mango h1 > b{
   color: #fff;
-  -webkit-text-stroke: 3px #0a3f9c;
-  font-size: 48px;
-  letter-spacing: 1px;
-  position: relative;
-  top: -20px;
+  -webkit-text-stroke: 2px #0a3f9c;
+  font-size: 40px;
+  letter-spacing: -1px;
 }
 
 .mangoMenu img{
@@ -82,7 +83,6 @@
 
 
 /*************************#menuTab section***************************************/
-
 
 #menuTab{
   max-width: 1200px;
@@ -124,8 +124,14 @@
 /*tab-content*/
 #menuTab .wrap{
   max-width: 1200px;
+  width: 1200px;
   margin: auto;
   margin-bottom: 100px;
+}
+#minitab{
+  float: right;
+  position: relative;
+  top: -60px;
 }
 
 /*********************season메뉴 영역: tab-content-1***********/
@@ -188,10 +194,12 @@
 #season p{
   position: relative;
   left:-28px;
-  top:20px
+  top:30px;
+  color: #042866;
 }
 #season b{
   font-size: 16px;
+  color: #333;
 }
 /*hover*/
 #season .sea:hover .on{
@@ -262,10 +270,13 @@
 #coffee p{
   text-align: left;
   position: relative;
-  bottom: 24px; left: -4px;
+  bottom: 24px; left: -230px;
+  color: #042866;
+  text-align: right;
 }
 #coffee b{
   font-size: 16px;
+  color: #333;
 }
 
 /*hover*/
@@ -335,10 +346,13 @@
 #noncafein p{
   text-align: left;
   position: relative;
-  bottom: 24px; left: -3px;
+  bottom: 24px; left: -220px;
+  color: #042866;
+  text-align: right;
 }
 #noncafein b{
   font-size: 16px;
+  color: #333;
 }
 
 /*hover*/
@@ -351,11 +365,11 @@
 
 /*버튼*/
 .tab-content .more{
-  margin:0px auto 40px;
-  padding: 16px 60px;
+  margin:0px auto 20px;
+  padding: 14px 50px;
   background-color:transparent;
   color:#042866;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   font-family: 'ONE Mobile Regular';
   cursor: pointer;
@@ -368,7 +382,7 @@
 }
 /*******footer*******/
 footer{
-  background-color:#fefce1;
+background-color:#fefce1 ;
 }
 footer .wrap{
   width: 1200px;

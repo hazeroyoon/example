@@ -1,4 +1,4 @@
-.navi > li{
+/*.navi > li{
   color: #fff;
 }
 
@@ -10,7 +10,7 @@
   color: #fbcd43;
 }
 
-
+*/
 
 
 
@@ -20,41 +20,86 @@
 
 #intro{
   min-width: 1200px;
+  width: 100%;
   margin: auto;
-  background-color:#0a3f9c;
-  padding: 200px 0 300px;
-  line-height: 1.6;
+  padding: 200px 0px;
+
 }
-#intro .wrap{
+#app{
+  min-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+#intro .wrap,
+#app .wrap{ 
+  min-width: 1200px;
   width: 1200px;
   margin: auto;
   text-align: center;
 }
-#intro h1{
+#intro h1,
+#app h1{
   font-family: 'ONE Mobile Title';
-  font-size: 48px;
-  color: #fff;
+  font-size: 40px;
+  color: #403F39;
   letter-spacing: 3px;
-  line-height: 80px;
+ line-height: 100px;
 } 
-#intro p{
+#intro p,
+#app p{
   font-family: 'ONE Mobile Regular';
-  color: #fff;
-  font-size: 18px;
+  color: #807F71;
+  font-size: 16px;
   line-height: 40px;
+  font-weight: bold;
 }
-#intro img{
+/*#intro img{
   margin: 40px 0;
-}
-#intro .brandnew{
+}*/
+/******/
+#intro .brandnew >.wrap{
   margin-bottom: 140px;
+  position: relative;
+  outline: 1px solid red;
+}
+#intro .brandnew .bg{
+  width: 100%;
+  position: absolute;
+  top: -150px;
+}
+#intro .brandnew .wrap{
+  width: 1200px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+#intro .brandnew .deco1{
+  position: absolute;
+  left: 0; top: 80px;
 }
 #intro .brandlogo{
   margin-bottom: 140px;
 }
-
+#intro .logoBg{
+  background: url(../img/intro/logo-content-bg.png) no-repeat center/ contain;
+  margin-top: 40px;
+}
+#intro .logoBg > img{
+  width: 700px;
+}
+#intro .content{
+  width: 100%; height: 1980px;
+  margin: auto;
+  background-image: url(../img/intro/content-bg_02.png);
+  background-position: center;
+  background-size:cover ;
+  line-height: 1.6;
+}
 #intro .content h1{
-  margin-bottom: 80px;
+  display: inline-block;
+  margin: 200px auto 60px;
 }
 #intro .content h3{
   font-family: 'ONE Mobile Title';
@@ -115,4 +160,112 @@
   height: 340px;
   background: url(../img/intruduce-content05.png) center/cover;
   margin-top: 40px;
+}
+#app .order{
+  margin-bottom: 160px;
+}
+#app .order .image{
+  width: 1000px; height: 900px; margin: auto;
+  background: #fefce1 url(../img/intro/ediyaorder-bg.png) no-repeat center/contain;
+  position: relative;
+  margin-bottom: 40px;
+}
+#app .phon1{
+  position: absolute;
+  top: 130px; left: 100px;
+  width: 400px;
+  animation: down 2s infinite alternate ease-in-out;
+}
+@keyframes down{
+0%{transform: translateY(0);}
+100%{transform: translateY(160px);}
+}
+#app .phon2{
+  position: absolute;
+  bottom: 50px;
+  right: 220px;
+  width: 400px;
+  animation: up 2s infinite alternate ease-in-out;
+}
+@keyframes up{
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-160px);}
+  }
+#app .order h3{
+  font-family: 'ONE Mobile Title';
+  font-size: 28px;
+  line-height: 80px;
+  color: #0a3f9c;
+}
+#app .order .text > img{
+  margin: 40px auto;
+}
+
+#app .orderSub{
+  width: 100%; height: 980px;
+  background: url(../img/intro/orderSub-bg_04.png) no-repeat center/cover;
+  overflow: hidden;
+}
+#app .orderSub .wrap{
+  height: 100%;
+  position: relative;
+
+}
+#app .orderSub .phones{
+  position: absolute;
+  width: 700px;
+  top: -530px;
+  right: -100px;
+}
+#app .orderSub .phones img{
+  filter: drop-shadow(-10px -10px 30px rgba(51, 51, 51, 0.514));
+}
+#app .orderSub .phone3{
+  margin-bottom: 30px
+}
+#app .orderSub .text{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#app .card{
+  height: 900px;
+}
+#app .card .wrap{
+  position: relative;
+  height: 100%;
+}
+#app .card .image{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 620px;
+  height: 500px;
+}
+#app .card .image > img{
+  filter: drop-shadow(-10px 10px 10px rgba(51, 51, 51, 0.3));
+}
+#app .card .image > img:nth-child(1){
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+#app .card .image > img:nth-child(2){
+  position:absolute;
+  right: 0;
+  bottom: 0;
+}
+#app .card .text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  right: 0;
+}
+/********************************************/
+footer{
+  background-color:#fff;
 }

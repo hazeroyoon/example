@@ -14,8 +14,14 @@
 <link href="css/subMenu.css" rel="stylesheet">
 <link href="css/subIntro.css" rel="sytlesheet">
 <link href="css/subStore.css" rel="stylesheet">
+<!--animaion플러그인-->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-
+<!--aos라이브러리-->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 
 <!--jqeury라이브러리-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -46,6 +52,10 @@
         $(".navi, .icon").removeClass("active");
       }
     })
+
+   //AOS플러그인
+   AOS.init();
+
   });
 </script>
 <body>
@@ -63,31 +73,29 @@
         <li>
           <a href="index.html">EDIYA</a>
           <ul class="sub">
-            <li><a href="subIntro.html">브랜드 이야기</a></li>
-            <li><a href="#">앱 소개</a></li>
+            <li><a href="subIntro.html#intro">브랜드 이야기</a></li>
+            <li><a href="subIntro.html#app">앱 소개</a></li>
           </ul>
         </li>
         <li>
           <a href="#"> 메뉴&bull;매장</a>
           <ul class="sub">
             <li><a href="subMenu.html">메뉴</a></li>
-            <li><a href="index.html#search">매장찾기</a></li>
-            <li><a href="#">글로벌이디야</a></li>
+            <li><a href="subsearch.html">매장찾기</a></li>
           </ul>
         </li>
         <li>
           <a href="#">창업안내</a>
           <ul class="sub">
-            <li><a href="index.html#last">가맹점 개설 안내</a></li>
-            <li><a href="index.html#last">창업 상담 신청</a></li>
+            <li><a href="subagency.html">가맹점 개설 안내</a></li>
+            <li><a href="subagency.html">창업 상담 신청</a></li>
           </ul>
         </li>
         <li>
           <a href="#">새로운 소식</a>
           <ul class="sub">
-            <li><a href="index.html#search">뉴스</a></li>
-            <li><a href="index.html#search">공지사항</a></li>
-            <li><a href="#">이디야 스토리</a></li>
+            <li><a href="subnotice.html">뉴스</a></li>
+            <li><a href="subnotice.html">공지사항</a></li>
           </ul>
         </li>
         <li>
@@ -98,11 +106,11 @@
 </header>
 
 <!----------------------------------------------------------->
-<section id="mango">
-  <img class="bg" src="img/menu-banner-bg.png" alt="">
+<section id="mango" class="animate__animated animate__fadeInLeft">
+  <img class="bg" src="img/menu-banner-bg(3).png" alt="">
   <div class="wrap">
-      <img class="lgImg"src="img/menu-banner-mango.png" alt="">
-      <h1>
+      <img class="lgImg"src="img/menu-banner-mango(4).png" alt="">
+      <h1 class="animate__animated animate__pulse">
        더위 먹지 망고<br>
        망고 먹으러 이디야로<br>
       <b>summer season menu</b></h1>
@@ -126,14 +134,16 @@
   </div>
 </section><!--banner end-->
 
-<!--tab section-->
-<section id="menuTab">
- 
-  <div class="wrap">
-    
-    <div class="tab-content" id="season"><!--------season 메뉴---------->
 
-      <ul class="tab">
+  
+<!--tab section-->
+<section id="menuTab" >
+  
+  <div class="wrap">
+    <img  id="minitab" src="img/menu-minitab-img.png">
+    <div class="tab-content" id="season" data-aos="fade-up" data-aos-once="false" data-aos-duration="800"><!--------season 메뉴---------->
+
+      <ul class="tab" >
         <li class="active"><a href="#season">Season</a></li>
         <li><a href="#coffee">coffee</a></li>
         <li><a href="#noncafein">non-caffeine</a></li>
@@ -191,7 +201,7 @@
           <button  class="more" type="button">메뉴 더보기</button>
         </div>  
 
-    <div class="tab-content" id="coffee"><!--------coffee 메뉴---------->
+    <div class="tab-content" id="coffee" data-aos="fade-up" data-aos-once="false" data-aos-duration="800"><!--------coffee 메뉴---------->
 
       <ul class="tab">
         <li class="active"><a href="#coffee">coffee</a></li>
@@ -245,7 +255,7 @@
       <button class="more" type="button">메뉴 더보기</button>
     </div>
 
-    <div class="tab-content" id="noncafein"><!--------non caffeine 메뉴---------->
+    <div class="tab-content" id="noncafein" data-aos="fade-up" data-aos-once="false" data-aos-duration="800"><!--------non caffeine 메뉴---------->
 
       <ul class="tab">
         <li class="active"><a href="#noncafein">non-caffeine</a></li>  

@@ -23,13 +23,12 @@ header> .wrap{
 .navi > li{
   margin-left: 70px;
   color: #042866;
-  font-family: "ONE Mobile";
-
+  font-family: 'ONE Mobile'
 }
 
 .navi > li > a{/*주메뉴를 감싸고 있는 a요소만 선택하여 글자두께를 변경함*/
+  font-size:18px;
   font-weight: bold;
-  font-size:20px;
   height:60px;
   line-height: 60px;
   display:block;
@@ -51,9 +50,8 @@ header> .wrap{
   transition: all 0.5s;
 }
 
-.navi > li >a:hover::after{
+.navi > li:hover a::after{
   width:100%;
-
 }
 
 
@@ -65,7 +63,9 @@ header> .wrap{
   display:none;
   padding-top: 10px;
 }
-
+.sub > li{
+  transition: all 0.3s;
+}
 .sub > li:hover{
   color: #fbcd43;
 }

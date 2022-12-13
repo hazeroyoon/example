@@ -32,11 +32,12 @@ $(function(){//doucument.ready
    ///subintro: 와우 플러그 인
    new WOW().init()
 
+
    //substore
 
 
     /////////////이디야스토어 배너 자동슬라이드/////////////////////////////////////////////
-    var timer = setInterval(slide,5000);//slide함수를 3초마다 실행하는 구문
+    var timer = setInterval(slide,4000);//slide함수를 3초마다 실행하는 구문
     function slide(){//slide함수 생성
       var first = $("#storeBanner .imgGroup > img:first");//변수 first에 첫번째 이미지 요소를 할당
       $("#storeBanner .imgGroup").animate({"left":"-1920px"},
