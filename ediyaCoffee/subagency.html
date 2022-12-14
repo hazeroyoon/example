@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>franchisee</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="https://kit.fontawesome.com/632d3e2496.js" crossorigin="anonymous"></script>
+
+<!--외부정의css-->
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+<!--파비콘-->
+<link rel="icon" type="image/ico" sizes="36x36" href="img/favicon4-96x96.png">
+<!--animaion플러그인-->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!--aos라이브러리-->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+
+<!--jqeury라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!--jquery UI-->
+<script src="js/jquery-ui.min.js"></script>
+
+<!--custom.js-->
+<script src="js/custom.js"></script>
+
+
+
+
+<style>
+#agency{
+  width: 100%;
+  min-width: 1200px;
+  position: relative;
+}
+#agency> .banner{
+  height: 800px;
+}
+#agency> .banner >img{
+  position: absolute;
+  padding-bottom: 100px;
+  left: 50%; transform: translateX(-50%);
+}
+#agency .content{
+  position: relative;
+  width: 100%;
+}
+#agency .wrap{
+  margin-bottom: 200px;
+  padding: 0 10px;
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 333;
+}
+
+#agency .minitab{
+  margin-top: 50px;
+  text-align: right;
+  line-height: 2;
+  margin-bottom: 70px;
+}
+#agency .minitab a{
+  color:#333;
+  font-family: Arial;
+  font-size: 14px;
+  display: inline-block;
+}
+#agency .minitab a:last-child{
+  color: #0a3f9c;
+}
+#agency .minitab span{
+  color:#333;
+  font-family: 'ONE Mobile Regular';
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+#agency .content-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+#agency .content-top >img{
+  height: 100%;
+}
+#agency .content-top >.boxes{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#agency .content-bottom {
+  margin-bottom: 140px;
+}
+#agency .content-bottom >.foots{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#agency .content-bottom >.foots >.to3{
+  width: 580px;
+}
+#agency .content-bottom >.foots >img{
+  height: 100%;
+}
+#agency .content-bottom >.foots>li:nth-child(2){
+  margin-top: 60px;
+}
+#agency .content-bottom >.foots >.form4{
+  display: flex;
+}
+#agency .ad{
+  display: block;
+  margin: auto;
+  margin-bottom: 200px
+}
+.bg1{
+  position: absolute;
+  top: 560px;
+  left:-100px;
+}
+.bg3{
+  position: absolute;
+  top: 1500px;
+  right: -200px;
+}
+.bg2{
+  position: absolute;
+  top: 384px;
+  right: 200px;
+}
+
+</style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <script> 
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+  </script>
+
+<!--header-->
+<header>
+  <div class="wrap">
+
+      <div class="logo"><a href="index.html"><img src="img/logo-n.png" alt="logo" width="40" height="70"></a></div>
+      
+      <ul class="navi">
+        <li>
+          <a href="index.html">EDIYA</a>
+          <ul class="sub">
+            <li><a href="subIntro.html">브랜드 이야기</a></li>
+            <li><a href="subapp.html">앱 소개</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"> 메뉴&bull;매장</a>
+          <ul class="sub">
+            <li><a href="subMenu.html">메뉴</a></li>
+            <li><a href="index.html#search">매장찾기</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">창업안내</a>
+          <ul class="sub">
+            <li><a href="subagency.html">가맹점 개설 안내</a></li>
+            <li><a href="subagency.html">창업 상담 신청</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">새로운 소식</a>
+          <ul class="sub">
+            <li><a href="subnotice.html">공지사항</a></li>
+            <li><a href="subnotice.html">이디야 스토리</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="subStore.html">SHOP</a>
+        </li>
+      </ul>
+</div>
+</header>
+
+<!----------------------------------------------------------->
+
+<section id ="agency">
+  <div class="banner animate__animated animate__fadeInDownBig">
+    <img src="img/agency-banner.png" alt="">
+  </div>
+  <div class="content">
+    <div class="wrap">
+      <div class="minitab">
+        <a href="index.html">Home</a><span>&gt;</span><a href="#">창업안내</a><span>&gt;</span><a href="#">가맹점개설안내</a>
+      </div>
+      <div class="content-top">
+        <img src="img/images/agency-txt1(1).png" alt=""
+        data-aos="fade-up" data-aos-once="false" data-aos-duration="800">
+        <ul class="boxes">
+          <li><img src="img/images/agency-box1(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800"></li>
+          <li><img src="img/images/agency-box2(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800" data-aos-delay="300"></li>
+          <li><img src="img/images/agency-box3(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800"></li>
+          <li><img src="img/images/agency-box4(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800" data-aos-delay="300"></li>
+          <li><img src="img/images/agency-box5(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800"></li>
+          <li><img src="img/images/agency-box6(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="800" data-aos-delay="300"></li>
+        </ul>
+      </div>  
+      <div class="content-bottom">
+        <ul class="foots">
+          <li class="to3">
+            <div class="foot1">
+              <img src="img/images/images/agency-foot_01.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000"  data-aos-anchor-placement="bottom">
+            </div>
+            <div class="foot2">
+              <img src="img/images/images/agency-foot_02.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000">
+            </div>   
+            <div class="foot3">
+              <img src="img/images/images/agency-foot_03.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000">
+            </div>
+          </li>
+
+          <li><img src="img/images/agency-txt2(1).png" alt=""
+            data-aos="fade-up" data-aos-once="false" data-aos-duration="1000"></li>
+
+          <li class="form4">
+            <div class="foot4">
+              <img src="img/images/images/agency-foot_04.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="300"
+             >
+            </div>
+            <div class="foot5">
+              <img src="img/images/images/agency-foot_05.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="600">
+            </div>
+            <div class="foot6">
+              <img src="img/images/images/agency-foot_06.png"
+              data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="900">
+            </div>
+          </li>  
+        </ul><!--foots end-->
+      </div><!--bottom end-->
+      <img class="ad" src="img/images/agency-ad.png" alt=""
+      data-aos="fade-up" data-aos-once="false" data-aos-duration="800" >
+    </div><!--wrap end-->
+    <!--bg deco-->
+    <img class="bg1" src="img/agency-bg1.png" alt=""
+    data-aos="fade-down-right" data-aos-once="false" data-aos-duration="800">
+    <img class="bg2" src="img/agency-bg2.png" alt=""
+    data-aos="fade-up-left" data-aos-once="false" data-aos-duration="800">
+    <img class="bg3" src="img/agency-bg3.png" alt=""
+    data-aos="fade-up-left" data-aos-once="false" data-aos-duration="800">
+  </div><!--content end-->
+</section>
+
+<!----------------------------------------------------------->
+<footer>
+  <div class="wrap">
+    <div class="up">
+    <img src="img/이디야로고.png" alt="" width="76" height="130">
+    <div>
+    <ul>
+      <li>고객을 위한 이디야</li>
+      <li><a href="#">문의하기(Contact us)</a></li>
+      <li><a href="#">고객상담샌터 1661-1399</a></li>
+    </ul>
+    <ul>
+      <li>파트너를 위한 이디야</li>
+      <li><a href="#">협력업체 문의</a></li>
+      <li><a href="#">가맹 문의</a></li>
+      <li><a href="#">제휴·마케팅 문의</a></li>
+      <li><a href="#">브랜드 소개서</a></li>
+    </ul>
+    <ul>
+      <li>개인정보 보호 및 약관</li>
+      <li><a href="#">개인정보 처리방침</a></li>
+      <li><a href="#">서비스 이용약관</a></li>
+      <li><a href="#">위치기반서비스 이용약관</a></li>
+      <li><a href="#">영상정보 치리기기 운영관리 방침</a></li>
+    </ul>
+  </div>
+   </div>
+   <div class="down">
+    <div class="contain">
+    <ul class="adress">
+      <li>주소지 : 서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</li>
+      <li>대표이사 : 문창기 | TEL : 02-0000-0000 | FAX :  02-0000-0000 | 사업자등록번호 : 00000-000</li>
+      <li>Copyright ⓒ 2022 YUNHAYOUNG All Right Reserved</li>
+    </ul>
+    <ul class="app">
+      <li><button><i class="fab fa-apple"></i>App Store</button></li>
+      <li><button><i class="fab fa-google-play"></i>Goggle Play</button></li>
+      <li><img src="img/qrcode.png" width="48" height="48"></li>
+    </ul>
+   </div>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

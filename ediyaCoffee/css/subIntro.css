@@ -1,0 +1,387 @@
+/*.navi > li{
+  color: #fff;
+}
+
+.navi > li > a::after{
+  background-color: #fbcd43;
+}
+
+.sub > li:hover{
+  color: #fbcd43;
+}
+
+*/
+
+
+
+/*------------------section--------------------------------------*/
+
+
+
+#intro{
+  min-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 200px 0px;
+
+}
+#app{
+  min-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+#intro .wrap,
+#app .wrap{ 
+  min-width: 1200px;
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+#intro h1,
+#app h1{
+  font-family: 'ONE Mobile Title';
+  font-size: 40px;
+  color: #403F39;
+  letter-spacing: 3px;
+ line-height: 100px;
+} 
+#intro p,
+#app p{
+  font-family: 'ONE Mobile Regular';
+  color: #807F71;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+/*#intro img{
+  margin: 40px 0;
+}*/
+/******/
+#intro .brandnew{
+  width: 100%;
+  height: 1000px;
+  background: #fff url(../img/intro/typo-bg.png) top center /cover;
+  position: relative;
+  top: -140px;
+  margin-bottom: 40px;
+}
+
+#intro .brandnew >.wrap>img:nth-child(1){
+  margin-top: 140px;
+  filter: drop-shadow( 8px 8px 0 #ccc);
+}
+#intro .brandnew .wrap{
+  width: 1200px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+/*minitab*/
+.minitab{
+  margin-top: 50px;
+  text-align: right;
+  line-height: 2;
+  margin-bottom: 70px;
+  font-weight: normal;
+}
+ .minitab a{
+  color:#333;
+  font-family: Arial;
+  font-size: 14px;
+  display: inline-block;
+}
+ .minitab a:last-child{
+  color: #0a3f9c;
+}
+.minitab span{
+  color:#333;
+  font-family: 'ONE Mobile Regular';
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+#intro .brandnew h1{
+  margin: 50px 0 20px;
+}
+#intro .brandnew .deco1{
+  position: absolute;
+  left: 50px; top: 180px;
+}
+#intro .brandnew .deco2{
+  position: absolute;
+  right: 20px; bottom: 200px;
+}
+
+
+/******logo******/
+
+
+#intro .brandlogo{
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin: auto;
+  background-color: #fff;
+}
+
+#intro .brandlogo .text h1{
+  margin-bottom: 20px;
+}
+#intro .brandlogo .main{
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+  margin-top: 100px;
+  filter: drop-shadow(10px 10px 0 #ccc);
+  z-index: 333;
+  }
+  #intro .brandlogo .bg1{
+    position: absolute;
+    left: calc(50% - 210px); transform: translateX(-50%);
+    top: 200px;
+  }
+   #intro .brandlogo .bg2{
+    position: absolute;
+    left: calc(50% - 200px); transform: translateX(-50%);
+    bottom: 40px;
+  }
+  #intro .brandlogo .bg3{
+    position: absolute;
+    top: -300px; right: -150px;
+    opacity: 0.4;
+  }
+
+/*********************/
+#intro .content{
+  width: 100%; height: 1500px;
+  margin: auto;
+  padding-top: 200px;
+  line-height: 1.6;
+  position: relative;
+}
+#intro .content .wrap{
+  position: relative; 
+  z-index: 333;
+}
+#intro .content .bg1{
+  position: absolute;
+  top: 280px;
+  left:calc(50% - 280px); transform: translateX(-50%);
+  z-index: 2;
+}
+#intro .content .bg2{
+  position: absolute;
+  top: 500px;
+  left:calc(50% + 380px); transform: translateX(-50%) rotate(180deg);
+  z-index: 3;
+}
+#intro .content .bg3{
+  position: absolute;
+  bottom: 0;
+  left:calc(50% - 470px); transform: translateX(-50%);
+  z-index: 1;
+}
+#intro .content h1{
+  display: inline-block;
+  margin-bottom: 60px;
+}
+#intro .content h3{
+  font-family: 'ONE Mobile Title';
+  font-size:30px ;
+}
+#intro .content h4{
+  font-family: 'ONE Mobile Regular';
+  font-size:22px ;
+  font-weight: bold;
+  padding: 10px 0;
+  color:#042866 ;
+}
+#intro .content p{
+  color: #333;
+  line-height: 1.8;
+  font-size: 14px;
+}
+#intro .content ul{ 
+  margin: auto;
+}
+#intro .content .box{
+  text-align:left ;
+  padding:50px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 10px 10px 0 #ccc;
+}
+
+#intro .content ul{
+  width: 1020px;
+}
+#intro .content ul li{
+  float: left;
+}
+#intro .b1{
+  width: 1020px;
+  height: 292px;
+  background: url(../img/intruduce-content01.png) center/cover;
+}
+#intro .b2{
+  width: 328px;
+  height: 620px;
+  background: url(../img/intruduce-content02.png) center/cover; 
+  margin-top: 40px;
+}
+#intro .b3{
+  width: 652px;
+  height: 292px;
+  background: url(../img/intruduce-content03.png) center/cover;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+#intro .b4{
+  width: 652px;
+  height: 292px;
+  background: url(../img/intruduce-content04.png) center/cover;
+  margin-top: 40px;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+#intro .b5{
+  width: 1020px;
+  height: 292px;
+  background: url(../img/intruduce-content05.png) center/cover;
+  margin-top: 40px;
+}
+
+/**************************/
+
+
+#app h1{
+  font-family: 'ONE Mobile Title';
+  font-size: 40px;
+  color: #0a3f9c;
+  letter-spacing: 3px;
+ line-height: 100px;
+} 
+#app .order h3{
+  font-family: 'ONE Mobile Title';
+  font-size: 24px;
+  line-height: 80px;
+  color: #403F39;
+}
+#app p{
+  font-family: 'ONE Mobile Regular';
+  color: #807F71;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+#app .order{
+  margin-top: 200px;
+  margin-bottom: 160px;
+}
+#app .order .image{
+  width: 1020px;
+  height: 800px; 
+  margin: auto;
+  background: url(../img/intro/ediyaorder-bg\(3\).png) no-repeat center/contain;
+  position: relative;
+  margin-bottom: 40px;
+}
+#app .phon1{
+  position: absolute;
+  top: 130px; left: 100px;
+  width: 380px;
+  animation: down 2s infinite alternate ease-in-out;
+}
+@keyframes down{
+0%{transform: translateY(-60px);}
+100%{transform: translateY(60px);}
+}
+#app .phon2{
+  position: absolute;
+  bottom: 50px;
+  right: 220px;
+  width: 380px;
+  animation: up 2s infinite alternate ease-in-out;
+}
+@keyframes up{
+  0%{transform: translateY(60px);}
+  100%{transform: translateY(-60px);}
+  }
+
+#app .order .text > img{
+  margin: 40px auto;
+  transform: scale(0.9);
+}
+
+#app .orderSub{
+  width: 100%; height: 980px;
+  background: url(../img/intro/orderSub-bg_04\(2\).png) no-repeat center/cover;
+  overflow: hidden;
+}
+#app .orderSub .wrap{
+  height: 100%;
+  width: 1020px;
+  position: relative;
+
+}
+#app .orderSub .phones{
+  position: absolute;
+  width: 600px;
+  top: -530px;
+  right: -100px;
+}
+#app .orderSub .phones img{
+  filter: drop-shadow(-10px -10px 30px rgba(51, 51, 51, 0.514));
+}
+#app .orderSub .phone3{
+  margin-bottom: 30px
+}
+#app .orderSub .text{
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#app .card{
+  height: 900px;
+}
+#app .card .wrap{
+  position: relative;
+  height: 100%;
+}
+#app .card .image{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 620px;
+  height: 500px;
+}
+#app .card .image > img{
+  filter: drop-shadow(-10px 10px 10px rgba(51, 51, 51, 0.3));
+}
+#app .card .image > img:nth-child(1){
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+#app .card .image > img:nth-child(2){
+  position:absolute;
+  right: 0;
+  bottom: 0;
+}
+#app .card .text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  right: 0;
+}
+/********************************************/
+footer{
+  background-color:#fff;
+}
