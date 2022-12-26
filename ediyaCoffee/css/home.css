@@ -13,26 +13,34 @@
 }
 #banner >.wrap{ 
  position: relative;
- top: 180px;
+ top: 160px;
 }
 #banner .text{
   font-family: "Jalnan";
-  font-size: 60px;
-  color: #0a3f9c;
+  font-size: 58px;
+  color: #fefce1;
+  -webkit-text-stroke: 3px #0a3f9c;
   line-height: 1.2;
   display: inline-block;
-  margin-left: 100px;
-  margin-top: 20px;
+  margin-left: 60px;
+  letter-spacing: 1px;
+}
+#banner .text span{
+  
 }
 #banner .text >  b{
-  color: #fefce1;
-  -webkit-text-stroke: 4px #0a3f9c;
-  /*text-shadow: -5px 0px #0a3f9c, 0px 5px #0a3f9c, 5px 0px #0a3f9c, 0px -5px #0a3f9c;*/
+  color:#0a409cf8;
+  -webkit-text-stroke: 0.2px #fefce1;
+  letter-spacing: -1px;
+}
+#banner .text >  b:first-child{
+  -webkit-text-stroke: 0px ;
+  letter-spacing: 2px;
 }
 #banner .ad{
   width: 730px; height:430px;
   background-color: #fff;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 10px;
   position: relative;
 }

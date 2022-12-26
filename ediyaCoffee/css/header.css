@@ -63,13 +63,18 @@ header> .wrap{
   display:none;
   padding-top: 10px;
 }
-.sub > li{
+.sub > li >a{
   transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.sub > li:hover{
+.sub > li:last-child{
+  padding-bottom: 20px;
+}
+.sub > li:hover> a{
   color: #fbcd43;
 }
 .sub > li> a{
-  display: inline-block;
-  width: 100%;
+
 }
