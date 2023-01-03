@@ -1,0 +1,653 @@
+@font-face{
+  font-family: "Play";
+  src:url(../font/Play-Regular.ttf)format('truetype')
+}
+@font-face{
+  font-family: "Monoton";
+  src:url(../font//Monoton-Regular.ttf)format('truetype')
+}
+/*초기화*/
+*{margin: 0; padding: 0;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{
+  background-color: #111;
+}
+
+/*로고*/
+#logo{
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 101;
+}
+#logo img{
+  width: 350px;
+}
+
+/*header*/
+header{
+  position: fixed;
+  width: 700px;
+  height: 100%;
+  top: 0;
+  left:-600px;
+  background: #000;
+  transform: skewX(-40deg);/*header를 -40도로 기울립니다*/
+  z-index: 100;
+}
+
+/*1depth*/
+.gnb{
+  width: 220px;
+  position: absolute;
+  top: 150px;
+  right:-20px;
+}
+.gnb > li{
+  position: relative; /*pos:abs를적용한 자식요소(sub)의 기준이 됨*/
+}
+.gnb > li > a{
+  display: block;
+  width: 200px; height: 50px;
+  font: bold 18px/2.7 "play";/*축약형: 볼드 사이즈/라인하이트 폰트패밀리*/
+  color: #666;
+  padding-right: 74px;
+  box-sizing: border-box;
+  text-align: right;
+  position: relative;
+}
+.gnb > li.on > a{/*on클래스가 붙은 첫번째 li만 색상변경*/
+ color: #fff;
+ z-index: 200px;
+ border: 1px solid #fff;
+}
+.gnb > .on > a::before{
+ opacity: 1;
+}
+.gnb > li> a::before{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  left: 50px;
+  width: 100px; height: 10px;
+  background: linear-gradient(90deg, #c025a7,#000);
+  transform: skewX(-10deg);/*header를 -40도로 기울립니다*/
+  opacity: 0;
+  transition: all 0.3s;
+}
+.gnb > li:hover > a{/**/
+  color: #fff;
+  border: 1px solid #fff;
+}
+.gnb > li:hover >a::before{
+  
+}
+.gnb em{/*skewX를 40deg로 설정하여 글자를 똑바로 세워줍니다*/
+  display: inline-block;
+  transform: skewX(40deg)!important;/*!important=최우선순위*/
+}
+.gnb em i{ margin-right: 20px;}
+
+/*2depth*/
+.sub{
+  position: absolute;/*공중에떠러 왼쪽에 붙게*/
+  left:0px;
+  top: 0;
+  opacity: 0;
+  transition: all 0.4s;/*변환효과 설정*/
+}
+.gnb > li.on > .sub{ /*메뉴에 마우스를 올리면 .sub메뉴가 오른쪽으로 이동하면서 나타남*/
+  opacity: 0.6;
+  left: 200px;
+}
+
+.sub a{
+  display:block;
+  width: 150px;
+  height: 40px;
+  background-color: #111;
+  font: normal 14px/3 Arial;
+  color: #f1f1f1;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+  transition: all 0.5s;
+}
+
+.sub a:hover{/*서브메뉴에 hover효과 적용*/
+  background-color: #f1f1f1;
+  opacity: 0.8;
+  color: #333;
+}
+
+/*sns버튼 모듬*/
+#sns{
+  position: fixed;
+  top:60px;
+  right: 50px;
+  z-index: 200;
+}
+
+#sns > li{
+  float: left;
+  margin-right: 30px;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+#sns > li:hover{
+  opacity:1;
+  transform: scale(1.4);
+}
+
+
+/*하단콘텐츠*/
+#side{
+  position: fixed;
+  width: 800px;
+  height: 100%;
+  bottom: 0;
+  right: -800px;
+  background: #111;
+  opacity: 0.5;
+  transform: skewX(-40deg);
+  transition: all 0.5s;
+  z-index: 100;
+}
+#side:hover{
+  right:-500px;
+  opacity: 0.8;
+}
+#side >.content{
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  left: 150px;
+  bottom: 0;
+  background-color: #000;
+  transition: all 1s;
+}
+#side:hover > .content{left:50px;}
+/*side요소에 마우스를 올리면.content요소를 완쪽으로 100px만큼 이동시켜줍니다.*/
+
+/*컨텐츠 썸네일*/
+#side .content p{
+  width: 300px;
+  height: 140px;
+  position: absolute;
+  left: 50px;
+}
+#side .content p em {
+  display:inline-block;
+  font: bold 16px/1.7 Arial;
+  color: #fff;
+  transform:rotate(-90deg) translateX(-58px) translateY(-20px);
+}
+#side .content p img{
+  width: 300px;
+  height: 100px;
+  opacity: 0.5;
+  transition: all 0.5s;
+  transform: skewX(45deg);
+}
+#side .content p a{
+  position: relative;
+}
+#side .content p a::before{
+  content: "";
+  display: inlin-block;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 30px; left: 4px;
+  background-color: transparent;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to left, #c025a7 0%, white 100%);
+  border-image-slice: 1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#side .content p a:hover img{/*이미지 요소에 하이라이트 효과 적용*/
+  opacity:1;
+  filter: brightness(2);
+}
+#side .content p a:hover::before{
+  opacity: 0.5;
+}
+#side .content p:nth-child(1){
+  bottom:340px; 
+  transform: translateX(200px);
+  transition: all 0.4s;
+}
+#side .content p:nth-child(1) em{
+  transform:rotate(-90deg) translateX(-58px) translateY(-30px);
+}
+#side .content p:nth-child(1) img{
+  transform: skewX(45deg) translateX(-10px)
+}
+#side .content p:nth-child(1) a::before{
+  transform: translateX(-20px);
+}
+#side .content p:nth-child(2){
+  bottom:190px; 
+  transform:translateX(200px);
+  transition: all 0.8s;
+}
+#side .content p:nth-child(2) img{
+  transform: skewX(45deg)translateX(-8px)
+}
+#side .content p:nth-child(3){
+  bottom:40px; 
+  transform:translateX(200px);
+  transition: all 1.2s;
+}
+#side:hover .content p{/*하단 콘텐츠영역에 마우스를 올료놓으면 아이템들(p)을 왼쪽으로 순차적으로 이동시킨다*/
+  transform: translateX(0px);
+}
+
+/*자동 볼링 버튼*/
+.btnContents{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  color: #c025a7;
+  transform:skewX(40deg) ;
+}
+#side:hover .btnContents{
+  /*.slide요소에 마우스를 올려놓으면 버튼을 화면 밖으로 이동시켜줍니다.*/
+  left: 700px;
+}
+.btnContents i{
+  font-size: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.btnContents i:nth-child(1){
+  animation: ani linear 1.5s infinite;
+}
+.btnContents i:nth-child(2){
+  animation: ani linear 1.5s infinite 0.5s;
+}
+.btnContents i:nth-child(1){
+  animation: ani linear 1.5s infinite 1s;
+}/*animation속성을 적용합니다. 가속도:linear,
+1.5초 동안 모션, infinite무한반복, 
+딜레마시간을 각각 다르게 적용하여 시차효과 적용*/
+@keyframes ani{
+ /* from{right:0; transform:scale(1);opacity: 1;}생략가능*/
+  to{right:100; transform:scale(1.5);opacity: 0;}
+}
+/*키프레임 적용하여 화살표가 왼쪽으로 100px지점으로 이동하여 1.5배 커짐과 동시에 서서히 투명해집니다*/
+
+
+section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/*배경동영상*/
+
+section .vid{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0px;
+  opacity: 1;
+}
+section video{
+  width: 100%;
+  min-width: 1600px;
+}
+
+/*txtBox*/
+#page1 .txtBox,
+#page2 .txtBox{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+#page1 .txtBox .txt{
+  font-size: 48px;
+  font-family: "Play";
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 2;
+}
+#page1 .txtBox .tit{
+  font-size: 150px;
+  color: #fff;
+  font-family: "Monoton";
+  letter-spacing: -1px;
+  line-height: 0.8;
+}
+#page1 .txtBox .tit em{
+  font-size: 40px;
+  font-family: "play";
+  color: #ccc;
+  position: relative;
+  letter-spacing: 1px;
+  left: -14px;
+}
+section .txtBox .button a{
+  font-size: 20px;
+  font-family: "play";
+  border: 1px solid #fff;
+  color: #111;
+  background-color: #fff;
+  padding: 12px 50px;
+  display: inline-block;
+  margin-top: 10px;
+  z-index: 100;
+  position: relative;
+  transition: all 0.3s;
+}
+section .txtBox .button{
+  position: relative;
+}
+section .txtBox .button .line{
+  position: absolute;
+  width: 160px; height: 10px;
+  top: calc(50% + 10px); transform: translateY(-50%);
+  left: 80px;
+  background: linear-gradient(90deg, #c025a7,#000);
+  transform: skewX(-40deg);/*header를 -40도로 기울립니다*/
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.3s;
+}
+section .txtBox .button:hover a{
+  font-style: italic;
+  box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+section .txtBox .button:hover .line{
+  opacity: 1;
+}
+
+#page2 h1{
+  font-size: 80px;
+  font-family:"play";
+  color: #c025a7;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+#page2 h1 span{
+  font-family: "Monoton";
+  font-size: 87px;
+  font-weight: lighter;
+}
+#page2 p{
+  font-family:"play";
+  color: #fff;
+  font-size: 22px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+#page2 .txtBox .button .line{;
+  width: 120px; height: 10px;
+  top: calc(50% + 10px); transform: translateY(-50%);
+  left: 212px;
+  transform: skewX(-40deg)
+}
+
+#page3{
+  background: url(../img/Artboard\ 1.png) top center/cover;
+}
+#page4{
+  background: url(../img/Artboard\ 2.png) bottom center/cover;
+}
+#page3 .title{
+ position: absolute;
+ left: 50%; transform: translateX(-50%);
+ top: 180px;
+}
+
+#page3 .group{
+  width: 100%; height: 500px;
+  position: absolute;
+  top: calc(50% + 100px); left:50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+#page3 .group article:nth-child(2){
+  position: relative; left: -70px;
+}
+#page3 .group article:nth-child(3){
+  position: relative; left: -210px;
+}
+#page3 .group article:nth-child(4){
+  position: relative; left: -370px;
+}
+#page3 .group article:nth-child(5){
+  position: relative; left: -370px;
+}
+#page3 .group article:nth-child(6){
+  position: relative; left: -549px;
+}
+#page3 .group article{
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+#page3 .group article img{
+  transition: all 0.5s ease-in-out;
+
+}
+#page3 .group article:hover img{
+  transform: scaleX(1.1);
+  filter: brightness(0.7) contrast(1.1);
+}
+#page3 .group article .txt{
+  position: absolute;
+  color: #f1f1f1;
+  left: 50%; transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+#page3 .group article .down{
+ bottom: 100px;
+}
+#page3 .group article .up{
+  top: 100px;
+}
+#page3 .group article .txt h3{
+ font-family:"Headline R";
+ font-style: italic;
+ line-height: 2;
+ font-size: 30px;
+ letter-spacing: 1px;
+}
+#page3 .group article .txt p{
+  font-family: "Play";
+  font-size: 16px;
+}
+#page3 .group article:nth-child(2) .txt{
+  left: calc(50% - 15px); transform: translateX(-50%);
+}
+#page3 .group article:nth-child(3) .txt{
+  left: calc(50% - 50px); transform: translateX(-50%);
+}
+#page3 .group article:nth-child(4) .txt{
+  left: calc(50% + 40px); transform: translateX(-50%);
+}
+#page3 .group article:nth-child(5) .txt{
+  left: calc(50% - 70px); transform: translateX(-50%);
+}
+#page3 .group article:nth-child(6) .txt{
+  left: calc(50% + 60px); transform: translateX(-50%);
+}
+#page4 .container{
+  width: 100%;
+  height: 550px;
+  margin-top: 340px;
+  padding-left: 240px;
+  box-sizing: border-box;
+  position: relative;
+}
+#page4 #intro_slider{
+  display: flex;
+  width: 550px; height: 366px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#page4 #c04_slider{
+  position: absolute;
+  left: 830px;
+  margin-top: 100px;
+  width:1000px ;
+}
+#page4 #c04_slider .c04_item{
+ font-family: "Play";
+ color: #fff;
+ font-size: 14px;
+ text-decoration: underline;
+ line-height: 3;
+ letter-spacing: 1px;
+}
+#page4 #typo_slider{
+  position: absolute;
+  top: 350px;
+  width: 1320px;
+}
+#page4 #typo_slider img{
+  position: relative; top: 5px;
+}
+
+#page4 .title{
+  position: absolute;
+  left:50%; transform: translateX(-50%);
+  top: 180px ;
+}
+#page4 .subtitle{
+  position: absolute;
+  left: 830px;
+  top: 10px;
+  padding-top: 0px;
+}
+
+#page4 button{
+  font: bold 14px/1 "play";
+  color: #111;
+  background-color: #fff;
+  border:none;
+  width: 140px; height: 30px;
+  transform: skewX(-10deg);
+  position:relative;
+  top:-114px; left: 370px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 7px;
+}
+
+#page4 button:hover{
+  background-color: rgba(17, 17, 17, 0.6);
+  color: #fff; font-weight: normal;
+  transform: skewX(-20deg);
+  border: 1px solid #fff;
+}
+#page4 button:hover::before{
+  opacity: 1;
+}
+
+#footer{
+  width: 100%; height: 100vh;
+  background: url(../img/Artboard\ 3.png) center /cover;
+  color: #f1f1f1;
+  font-family: "Play";
+}
+#footer .subscribe{
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+  top: 150px;
+  text-align: center;
+  width: 600px;
+}
+#footer .subscribe h4{
+  letter-spacing: 1px;
+}
+#footer .subscribe h1{
+  font-size: 40px;
+  line-height: 1.4;
+  margin: 20px 0 40px;
+}
+#footer .subscribe form{
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text]{
+  width: 70%;height: 35px;
+  float: left;
+  text-align: center;
+  color: #333;
+  border: none;
+}
+input[type=submit]{
+  width: 30%; height: 35px;
+  float: right;
+  background-color: #c025a7;
+  border: 1px solid #c025a7;
+  color: #333;
+  position: relative;
+  left: -2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+label{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+input[type=checkbox]{
+  margin-right: 10px;
+  position: relative; top:1px
+}
+#footer .foot{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 50px 300px;
+  box-sizing: border-box;
+}
+#footer .foot .top{
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+#footer .foot .top .bold{
+  line-height: 3;
+  font-family: "Play";
+  font-size: 22px;
+}
+#footer .foot .top a{
+  transition: all 0.3s;
+}
+#footer .foot .top a:hover{
+  color: #c025a7;
+}
+#footer .bottom span{
+  border-left: 2px solid #fff;
+  padding: 0 10px;
+}
+#footer .bottom span:first-child{
+  border-left: none;
+}

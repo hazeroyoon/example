@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cannondale</title>
+<script src="https://kit.fontawesome.com/632d3e2496.js" crossorigin="anonymous"></script>
+<!--외부정의-->
+<link href="css/style.css" rel="stylesheet">
+<!--jqeury라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--custom-->
+<script src="js/custom.js"></script>
+</head>
+
+<body>
+  <div class="contain">
+
+  <!--로고-->
+  <h1 id="logo"><img src="img/logo.png"></h1>
+
+  <!--header-->
+  <header>
+    <ul class="gnb">
+      <li>
+        <a href="#">
+          <em>Home</em><!--fa-spin:계속 도는 속성 적용-->
+        </a>
+        <ul class="sub">
+          <li><a href="#"><em>About us</em></a></li>
+          <li><a href="#"><em>Contacts</em></a></li>
+          <li><a href="#"><em>Careers</em></a></li>
+        </ul>
+      </li><!--em태그:글자를 똑바로 세우기 위해-->
+      <li><a href="#"><em>BIkes</em></a>
+        <ul class="sub"><!--투 뎁스-->
+          <li><a href="#"><em>Store Locater</em></a></li>
+          <li><a href="#"><em>Factory Oulet</em></a></li>
+        </ul>
+      </li>
+      <li><a href="#"><em>Explore</em></a>
+        <ul class="sub">
+          <li><a href="#"><em>E-Bike</em></a></li>
+          <li><a href="#"><em>Active</em></a></li>
+          <li><a href="#"><em>MTB</em></a></li>
+          <li><a href="#"><em>ROAD</em></a></li>
+          <li><a href="#"><em>KIDS</em></a></li>
+          <li><a href="#"><em>GRAVEL</em></a></li>
+        </ul>
+      </li>
+      <li><a href="#"><em>Stories</em></a>
+        <ul class="sub">
+          <li><a href="#"><em>Cannondale World</em></a></li>
+          <li><a href="#"><em>News</em></a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!--sns버튼모음-->
+  <ul id="sns">
+    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+  </ul>
+ 
+
+  <!--하단 컨텐츠박스-->
+  <div id="side">
+    <div class="content">
+      <p>
+        <em>E-BIKES</em>
+        <a href="#"><img src="img/side-image1.png" alt=""></a>
+      </p>
+      <p>
+        <em>BIKES</em>
+        <a href="#"><img src="img/side-image2.png" alt=""></a>
+      </p>
+      <p>
+        <em>GEARS</em>
+        <a href="#"><img src="img/side-image3.png" alt=""></a>
+      </p>
+    </div>
+    <div class="btnContents">
+      <i class="fas fa-angle-double-left"></i>
+      <i class="fas fa-angle-double-left"></i>
+      <i class="fas fa-angle-double-left"></i>
+    </div>
+  </div> 
+  
+  <div id="fullpage">
+  <section id="page1">
+    <!--배경동영상-->
+    <figure class="vid">
+      <video loop autoplay muted><!---->
+        <source src="img/TourDeFuture2.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <!--동영상 컨텐츠가 들어가는 영역이므로 figure태그를 생성하여 그안에 video태그로
+    영상을 삽입
+    (autoplay=자동재생, loop=반복,muted=음소거)-->
+  <!--웹폰트-->
+  <div class="txtBox">
+    <p class="tit">50<em>/24</em></p>
+    <p class="txt">Tour de future</p>
+    <div class="button">
+    <span class="line"></span>
+    <a href="#">read the more</a>
+    </div>
+  </div>
+  </section>
+
+<section id="page2">
+  <!--배경동영상-->
+  <figure class="vid">
+    <video loop autoplay muted>
+      <source src="img/BikeFinder_Desktop.mp4" type="video/mp4">
+    </video>
+  </figure>
+
+  <div class="txtBox" data-aos="fade-up" data-aos-once="false" data-aos-duration="1200">
+  <h1>Find Your <span>B</span>ike</h1>
+  <p>Use our Bike Finder tp pick the perfect<br>bike for you</p>
+  <div class="button">
+    <span class="line"></span>
+    <a href="#">get start</a>
+  </div>
+</div>
+</section>
+
+<section id="page3">
+<img class="title" src="img/page3-titile.png">
+<div class="group">
+<article>
+  <img src="img/explore-bike1.png" alt="">
+  <div class="txt down">
+  <h3>E-BIKE</h3>
+  <p>Electric Intelligence</p>
+  </div>
+</article>
+<article>
+  <img src="img/explore-bike2.png" alt="">
+  <div class="txt up">
+  <h3>ACTIVE</h3>
+  <p>Quick, comfortable and capable</p>
+  </div>
+</article>
+<article>
+  <img src="img/explore-bike3.png" alt="">
+  <div class="txt down">
+  <h3>MTB</h3>
+  <p>Excell on all surpace</p>
+  </div>
+</article>
+<article>
+  <img src="img/explore-bike4.png" alt="">
+  <div class="txt up">
+  <h3>ROAD</h3>
+  <p>Fuel your ambituin</p>
+  </div>
+</article>
+<article>
+  <img src="img/explore-bike5.png" alt="">
+  <div class="txt down">
+  <h3>KIDS</h3>
+  <p>Kid-Correct features</p></div>
+</article>
+<article>
+  <img src="img/explore-bike6.png" alt="">
+  <div class="txt up">
+  <h3>GRAVEL</h3>
+  <p>Unlimited Adventure</p></div>
+</article>
+</div>
+</section>
+
+<section id="page4">
+  <img class="title" src="img/page4-titile.png" alt="">
+  <div class="container">
+          <img class="subtitle" src="img/page4-subtitile.png" alt="">
+          <div id="intro_slider">
+              <div class="intro_item">
+                  <a href="#!"><img src="img/page4-large1.png" alt=""></a>
+              </div>
+              <div class="intro_item">
+                  <a href="#!"><img src="img/page4-large2.png" alt=""></a>
+              </div>
+              <div class="intro_item">
+                  <a href="#!"><img src="img/page4-large3.png" alt=""></a>
+              </div>
+              <div class="intro_item">
+                  <a href="#!"><img src="img/page4-large4.png" alt=""></a>
+              </div>
+          </div>
+        
+
+          <div id="c04_slider">
+              <div class="c04_item">
+                  <a href="#!">
+                    <img src="img/page4-thumb2.png" alt="">
+                    Looking Back: A Farewell to“Alive"
+                  </a>
+              </div>
+              <div class="c04_item">
+                  <a href="#!">
+                    <img src="img/page4-thumb3.png" alt="">
+                    Brett Hite: The Distance I’ve Travelled
+                  </a>
+              </div>
+              <div class="c04_item">
+                  <a href="#!">
+                    <img src="img/page4-thumb4.png" alt="">
+                    Cannondale Presents: High Road
+                  </a>
+              </div>
+              <div class="c04_item">
+                <a href="#!">
+                  <img src="img/page4-thumb1.png" alt="">
+                  Max Nerurkar: Making Marks
+                </a>
+            </div>
+          </div>
+          <div id="typo_slider">
+            <div>
+              <img src="img/page4-typo1(1).png" alt="">
+              <button><p>go to read</p></button>
+            </div>
+            <div>
+              <img src="img/page4-typo2(1).png" alt="">
+              <button><p>go to read</p></button>
+            </div>
+            <div>
+              <img src="img/page4-typo3(1).png" alt="">
+              <button><p>go to read</p></button>
+            </div>
+            <div>
+              <img src="img/page4-typo4(1).png" alt="">
+              <button><p>go to read</p></button>
+            </div>
+          </div>
+
+          
+  </div>
+</section>
+<section id="footer">
+  <article class="subscribe">
+    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+    <H1>STAY UPDATED ON CANNONDALE WORLD</H1>
+    <form>
+      <input type="text" placeholder="YOUR EMAIL HERE">
+      <input type="submit" value="SUBSCRIBE">
+      <label><input type="checkbox">I hereby declare to have read the privacy policy availabe on the website</label>
+      <label><input type="checkbox">I agree receiving promitional emails form Cannondale</label>
+    </form>
+  </article>
+    <div class="foot">
+      <div class="top">
+      <ul>
+        <li class="bold">COMPANY</li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">CONTACTS</a></li>
+        <li><a href="#">CAREERS</a></li>
+        <li><a href="#">PRESS ROOM</a></li>
+        <li><a href="#">CANNONDALE WORDL</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">STORE LOCATOR</a></li>
+        <li><a href="#">FACTORY OUTLET</a></li>
+      </ul>
+      <ul>
+        <li class="bold">PRODUCT</li>
+        <li><a href="#">E-BIKE</a></li>
+        <li><a href="#">ACTIVE</a></li>
+        <li><a href="#">MTB</a></li>
+        <li><a href="#">ROAD</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">GRAVEL</a></li>
+      </ul>
+      <ul>
+        <li class="bold">SUPPORT</li>
+        <li><a href="#">RIDER SURPORT</a></li>
+        <li><a href="#">MANUALS</a></li>
+        <li><a href="#">REGISTER YOUR CANNONDALE</a></li>
+        <li><a href="#">SAFTY AND RECALLS</a></li>
+        <li><a href="#">RECOGNIZE COUNTERFERT PRODUCTS</a></li>
+        <li><a href="#">DOWNLOAD</a></li>
+        <li><a href="#">GENERAL REAMS AND CONDITIONS OF SLA</a></li>
+        <li><a href="#">FACTORY OUTLET</a></li>
+      </ul>
+      <ul>
+        <li class="bold">DEALERS AREA</li>
+        <li><a href="#">B2B</a></li>
+        <li><a href="#">CLENT</a></li>
+        <li><a href="#">DOWNLOAD/SERVICE BULLETIN</a></li>
+        <li><a href="#">DEALER CLAM FORM</a></li>
+        <li><a href="#">MYUNIQ</a></li>
+      </ul>
+    </div>
+      <div class="bottom"><span>© Cycling Sports Group, Inc. 2023</span>
+        <span>
+       Terms of Service</span>
+       <span>
+       Privacy Policy</span>
+       <span>
+        Cookie Preferences</span></div>
+    </div>
+</section>
+</div><!--fullpage end-->
+
+
+</div><!--contain end-->
+</body>
+
+</html>
